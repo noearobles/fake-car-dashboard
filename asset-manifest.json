@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fake-car-dashboard/static/css/main.a29c43ac.css",
-    "main.js": "/fake-car-dashboard/static/js/main.57bae3ca.js",
+    "main.js": "/fake-car-dashboard/static/js/main.53eaef33.js",
     "index.html": "/fake-car-dashboard/index.html",
     "main.a29c43ac.css.map": "/fake-car-dashboard/static/css/main.a29c43ac.css.map",
-    "main.57bae3ca.js.map": "/fake-car-dashboard/static/js/main.57bae3ca.js.map"
+    "main.53eaef33.js.map": "/fake-car-dashboard/static/js/main.53eaef33.js.map"
   },
   "entrypoints": [
     "static/css/main.a29c43ac.css",
-    "static/js/main.57bae3ca.js"
+    "static/js/main.53eaef33.js"
   ]
 }
