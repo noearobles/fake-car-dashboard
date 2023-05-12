@@ -19,9 +19,9 @@ import Error from './components/Error'
 export default function Router() {
     return (
         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/car/:id' element={<Car />} />
+            <Route path='/fake-car-dashboard' element={<Home />} />
+            <Route path='/fake-car-dashboard/about' element={<About />} />
+            <Route path='/fake-car-dashboard/car/:id' element={<Car />} />
             <Route path='*' element={<Error />} />
         </Routes>
     )
