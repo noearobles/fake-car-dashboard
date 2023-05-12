@@ -8,25 +8,24 @@ to the About component.
 Remember to export the component at the end
 */
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Car from "./components/Car";
-import React from "react";
-import { Routes, Route } from "react-router";
-import { HashRouter } from "react-router-dom";
-import Error from "./components/Error";
+import Home from './components/Home'
+import About from './components/About'
+import Car from './components/Car'
+import React from 'react'
+import { Routes, Route } from 'react-router'
+import { BrowserRouter } from 'react-router-dom'
+import Error from './components/Error'
 // Write component imports here //
 
 export default function Router() {
     return (
-        <HashRouter>
+        <BrowserRouter basename='/fake-car-dashboard'>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/car/:id" element={<Car />} />
-                <Route path="*" element={<Error />} />
-            </Routes>
-        </HashRouter>
-    );
+                <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/car/:id' element={<Car />} />
+                <Route path='*' element={<Error />} />
+            </Routes></BrowserRouter>
+    )
 }
 // Start Router function here //
