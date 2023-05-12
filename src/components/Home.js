@@ -1,8 +1,9 @@
 import React from 'react'
 import { Card, CardContent, CardActions, Divider } from '@mui/material'
+import { Link } from 'react-router-dom'
 import cars from '../cars.json'
 
-const Home = () => {
+export default function Home() {
     console.log('CARS', cars)
     return (
         <div className="card-container">
@@ -11,21 +12,18 @@ const Home = () => {
                     <CardContent className="text-gray">
                         <span>{car.Name.toUpperCase()}</span>
                         <ul>
-                        <li>Miles_per_Gallon: {car["Miles_per_Gallon"]}</li>
-                        <li>Cylinders: {car["Cylinders"]}</li>
-                        <li>Displacement: {car["Displacement"]}</li>
-                        <li>Horsepower: {car["Horsepower"]}</li>
+                            <li>Miles_per_Gallon: {car["Miles_per_Gallon"]}</li>
+                            <li>Cylinders: {car["Cylinders"]}</li>
+                            <li>Displacement: {car["Displacement"]}</li>
+                            <li>Horsepower: {car["Horsepower"]}</li>
                         </ul>
                     </CardContent>
                     <Divider />
                     <CardActions style={{ color: 'mediumblue' }}>
-                        {/* Change a tag to Link */}
-                        <a>See more Details</a>
+                        <Link to={`/car/${car.id}`}>See more Details</Link>
                     </CardActions>
                 </Card>
             ))}
         </div>
     )
 }
-
-export default Home

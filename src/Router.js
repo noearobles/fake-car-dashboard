@@ -10,8 +10,10 @@ Remember to export the component at the end
 
 import Home from './components/Home'
 import About from './components/About'
+import Car from './components/Car'
 import React from 'react'
 import { Routes, Route } from 'react-router'
+import Error from './components/Error'
 // Write component imports here //
 
 export default function Router() {
@@ -19,6 +21,8 @@ export default function Router() {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
+            <Route path='/car/:id' element={<Car />} />
+            <Route path='*' element={<Error />} />
         </Routes>
     )
 }

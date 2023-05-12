@@ -3,7 +3,7 @@ import { AppBar, Toolbar, IconButton, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 // Import { Link } here //
 
-const Navigation = () => {
+export default function Navigation() {
     return (
         <AppBar position="relative">
             <Toolbar>
@@ -26,4 +26,3 @@ const Navigation = () => {
     )
 }
 
-export default Navigation
