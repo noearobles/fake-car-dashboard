@@ -12,7 +12,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Car from "./components/Car";
 import React from "react";
-import { Routes, Route, HashRouter } from "react-router";
+import { Routes, Route } from "react-router";
+import { HashRouter } from "react-router-dom";
 import Error from "./components/Error";
 // Write component imports here //
 
