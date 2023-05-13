@@ -19,7 +19,7 @@ import Error from './components/Error'
 
 export default function Router() {
     return (
-        <BrowserRouter basename='/fake-car-dashboard'>
+        <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
